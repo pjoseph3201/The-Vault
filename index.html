@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Vault — Fine Jewelry Membership</title>
+  <meta name="description" content="The Vault is a fine jewelry membership. Choose up to three pieces each month, delivered to your door." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ======= NAV ======= -->
+  <header class="nav">
+    <button class="nav__menu" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__links nav__links--left">
+      <a href="#collection">Collection</a>
+      <a href="#how">How It Works</a>
+    </nav>
+    <a class="nav__logo" href="#">The Vault</a>
+    <nav class="nav__links nav__links--right">
+      <a href="#membership">Membership</a>
+      <a href="#about">About</a>
+    </nav>
+    <button class="nav__bag" aria-label="Shopping bag">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+        <path d="M6 8h12l1 13H5L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/>
+      </svg>
+    </button>
+  </header>
+
+  <!-- ======= DRAWER MENU ======= -->
+  <nav class="drawer" id="drawer">
+    <a href="#collection" onclick="toggleMenu()">Collection</a>
+    <a href="#how" onclick="toggleMenu()">How It Works</a>
+    <a href="#membership" onclick="toggleMenu()">Membership</a>
+    <a href="#about" onclick="toggleMenu()">About</a>
+  </nav>
+
+  <!-- ======= HERO ======= -->
+  <section class="hero">
+    <div class="hero__image"></div>
+    <div class="hero__content">
+      <p class="eyebrow">Fine Jewelry Membership</p>
+      <h1>Wear what<br />you treasure.</h1>
+      <p class="hero__sub">Discover extraordinary fine jewelry through a curated monthly membership.</p>
+      <div class="hero__actions">
+        <a href="#membership" class="btn btn--solid">Become a Member</a>
+        <a href="#collection" class="btn btn--outline">Browse Collection</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= HOW IT WORKS ======= -->
+  <section class="how" id="how">
+    <p class="eyebrow eyebrow--dark">The Membership</p>
+    <h2>Three pieces.<br />Every month.<br />Yours to wear.</h2>
+    <p class="how__intro">Each month, unlock the vault and choose up to three pieces from our curated collection — delivered to your door.</p>
+
+    <div class="how__steps">
+      <div class="step">
+        <span class="step__num">01</span>
+        <h3>Curate your edit</h3>
+        <p>Browse the collection and select up to three pieces that speak to you — from sculptural gold to heirloom diamonds.</p>
+      </div>
+      <div class="step">
+        <span class="step__num">02</span>
+        <h3>Delivered to your door</h3>
+        <p>Your pieces arrive in signature Vault packaging, insured and polished, ready to wear the moment you open the box.</p>
+      </div>
+      <div class="step">
+        <span class="step__num">03</span>
+        <h3>Wear. Return. Repeat.</h3>
+        <p>Wear them all month long. When you're ready for something new, send them back and unlock your next edit.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= COLLECTION ======= -->
+  <section class="collection" id="collection">
+    <div class="collection__head">
+      <p class="eyebrow eyebrow--dark">The Collection</p>
+      <h2>Inside the vault</h2>
+    </div>
+    <div class="collection__grid">
+      <a class="card" href="#">
+        <div class="card__img card__img--1"></div>
+        <p class="card__name">The Meridian Bangle</p>
+        <p class="card__meta">18k Gold &amp; Diamond · Retail $2,400</p>
+      </a>
+      <a class="card" href="#">
+        <div class="card__img card__img--2"></div>
+        <p class="card__name">Aurelia Crescent Chain</p>
+        <p class="card__meta">18k Gold · Retail $3,150</p>
+      </a>
+      <a class="card" href="#">
+        <div class="card__img card__img--3"></div>
+        <p class="card__name">Petra Pearl Pendant</p>
+        <p class="card__meta">18k Gold &amp; Pearl · Retail $1,850</p>
+      </a>
+      <a class="card" href="#">
+        <div class="card__img card__img--4"></div>
+        <p class="card__name">Solstice Diamond Line</p>
+        <p class="card__meta">Diamond · Retail $4,200</p>
+      </a>
+    </div>
+    <a href="#" class="btn btn--dark">View Full Collection</a>
+  </section>
+
+  <!-- ======= MEMBERSHIP ======= -->
+  <section class="membership" id="membership">
+    <div class="membership__inner">
+      <p class="eyebrow">Membership</p>
+      <h2>One key.<br />Endless jewelry.</h2>
+      <div class="membership__card">
+        <p class="membership__price"><span>$249</span>/month</p>
+        <ul>
+          <li>Up to 3 fine jewelry pieces per month</li>
+          <li>Insured delivery &amp; returns, on us</li>
+          <li>Swap your edit every month</li>
+          <li>Member pricing if you fall in love &amp; keep a piece</li>
+          <li>Pause or cancel anytime</li>
+        </ul>
+        <a href="#" class="btn btn--solid btn--wide">Become a Member</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= ABOUT ======= -->
+  <section class="about" id="about">
+    <p class="eyebrow eyebrow--dark">Our Philosophy</p>
+    <p class="about__quote">"Extraordinary jewelry shouldn't live behind glass. It should live with you."</p>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <p class="footer__logo">The Vault</p>
+    <div class="footer__links">
+      <a href="#collection">Collection</a>
+      <a href="#membership">Membership</a>
+      <a href="#">FAQ</a>
+      <a href="#">Contact</a>
+    </div>
+    <p class="footer__copy">© 2026 The Vault. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('drawer').classList.toggle('open');
+      document.body.classList.toggle('no-scroll');
+    }
+  </script>
+</body>
+</html>
